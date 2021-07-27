@@ -1,0 +1,27 @@
+#!/bin/bash
+
+# Create a while loop to display menu options
+while :
+do
+  # Take the users input for the URL location
+  read -p "Please type the URL of a file to download or type 'Exit' to quit: " urlInput
+
+  case $urlInput in
+    "Exit")  # Exit the loop
+             break
+             ;;
+    "exit")  # Exit the loop
+             break
+             ;;
+         *)  # Get the download location
+             read -p "Type the location of where you would like to download the file to: " downloadLocation
+
+             # A couple of test URL's
+             # https://www.jumpjet.info/Offbeat-Internet/More/PC/The_Text-Book_of_Ju-Jutsu_as_Practised_in_Japan.pdf
+             # http://www.grapplearts.com/wp-content/uploads/2014/02/Roadmap-for-BJJ-1.4.11.pdf
+             
+             # Download the file to the download location
+             wget -P "$downloadLocation" "$urlInput"
+   esac
+done
+exit 0
