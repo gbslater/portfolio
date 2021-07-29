@@ -3,6 +3,8 @@
 # Version Date        Author   Description
 # 1.0     21 Jul 2021 G Slater Initial version
 # 1.1     26 Jul 2021 G Slater Added extra menu options 4-8
+# 1.2     29 Jul 2021 G Slater Fixed colour issue
+
 
 # Validate the users password
 ./passwordCheck.sh
@@ -15,10 +17,10 @@ if [ $? -eq 0 ]; then
 
     # If the exit code was successful then run the menu
     # Set the colour to green
-    echo -en "\e[34m"
+    echo -en "\033[34m"
     echo "Select an option:"
     # Set the colour to cyan
-    echo -en "\e[36m"
+    echo -en "\033[36m"
     echo "1. Create a folder"
     echo "2. Copy a folder"
     echo "3. Set a password"
@@ -27,7 +29,7 @@ if [ $? -eq 0 ]; then
     echo "6. Check Filenames"
     echo "7. Download a File"
     # Set the colour to white    
-    echo -en "\e[00m"
+    echo -en "\033[00m"
     echo "8. Exit"
 
     # Read the user input

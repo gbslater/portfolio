@@ -5,9 +5,9 @@ num2=3
 
 echo test 1 
 echo $num2 - $num1 | bc -l
-echo -e "\e[32mtest in colour \e[00m"
+echo -e "\033[32mtest in colour \033[00m"
 result=$(echo $num2 - $num1 | bc -l)
-echo -e "\e[32m$result \e[00m"
+echo -e "\033[32m$result \033[00m"
 
 
 echo test 2

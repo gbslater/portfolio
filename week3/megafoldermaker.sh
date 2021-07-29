@@ -1,5 +1,8 @@
 #!/bin/bash
 
+# Version Date        Author   Description
+# 1.0     26/07/2021  G Slater Initial version
+
 #If there aren't two arguments to the script
 
 if (( $#!=2 )); then

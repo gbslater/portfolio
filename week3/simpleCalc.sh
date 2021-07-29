@@ -7,10 +7,10 @@ while :
 do
   # Display calc menu options
   echo -e "\e[00mChoose one of the following options: "
-  echo -e "1. \e[34mAdd \e[00mtwo numbers"
-  echo -e "2. \e[32mSubtract \e[00mtwo numbers"
-  echo -e "3. \e[31mMultiply \e[00mtwo numbers"
-  echo -e "4. \e[35mDivide \e[00mtwo numbers"
+  echo -e "1. \033[34mAdd \033[00mtwo numbers"
+  echo -e "2. \033[32mSubtract \033[00mtwo numbers"
+  echo -e "3. \033[31mMultiply \033[00mtwo numbers"
+  echo -e "4. \033[35mDivide \033[00mtwo numbers"
   echo -e "0. Exit"
   echo 
 
@@ -29,7 +29,7 @@ do
 
         # Display the result in blue
         echo 
-        echo -e "\e[00mThe answer is \e[34m$result \e[00m"
+        echo -e "\033[00mThe answer is \033[34m$result \033[00m"
         echo 
         ;;
     2)  # Take user input for subtraction
@@ -42,7 +42,7 @@ do
 
         # Display the result in green
         echo 
-        echo -e "\e[00mThe answer is \e[32m$result \e[00m"
+        echo -e "\033[00mThe answer is \033[32m$result \033[00m"
         echo 
         ;;
     3)  # Take user input for multiply
@@ -55,7 +55,7 @@ do
 
         # Display the result in Red
         echo 
-        echo -e "\e[00mThe answer is \e[31m$result \e[00m"
+        echo -e "\033[00mThe answer is \033[31m$result \033[00m"
         echo 
         ;;
     4)  # Take user input for division
@@ -68,7 +68,7 @@ do
 
         # Display the result in purple
         echo 
-        echo -e "\e[00mThe answer is \e[35m$result \e[00m"
+        echo -e "\033[00mThe answer is \033[35m$result \033[00m"
         echo 
         ;;
     0)  # Exit the menu 

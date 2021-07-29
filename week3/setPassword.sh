@@ -1,5 +1,8 @@
 #!/bin/bash
 
+# Version Date        Author   Description
+# 1.0     26/07/2021  G Slater Initial version
+
 # Ask for directory and password
 read -p "Enter folder name : " folderName
 read -s -p "Enter password : " secretPassword

@@ -7,7 +7,7 @@
 secretHashFile="output/secret.txt"
 
 # Set the colour to red
-echo -en "\e[31m"
+echo -en "\033[31m"
 
 # Ask the user to enter the secret password
 read -sp "Enter the secret password: " userPassword
@@ -20,17 +20,17 @@ userPasswordHash=$(echo $userPassword | sha256sum)
 storedPasswordHash=$(cat $secretHashFile)
 
 # Set the colour to green
-echo -en "\e[32m"
+echo -en "\033[32m"
 
 # Validate the password
 if [ "$userPasswordHash" == "$storedPasswordHash" ]; then
   echo "Access Granted"
   # Set the colour back to white
-  echo -en "\e[00m"
+  echo -en "\033[00m"
   exit 0
 else
   echo "Access Denied"
   # Set the colour back to white
-  echo -en "\e[00m"
+  echo -en "\033[00m"
   exit 1
 fi

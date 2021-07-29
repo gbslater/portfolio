@@ -32,7 +32,7 @@
 "add cyan colour code": { 
 	"prefix": "cyan", 
 	"body": [ 
-	"\\e[36m" 
+	"\\033[36m" 
 	], 
 	"description": "Add colour code for cyan to script"
 }
@@ -40,7 +40,7 @@
 "add grey colour code": { 
 	"prefix": "grey", 
 	"body": [ 
-	"\\e[37m" 
+	"\\033[37m" 
 	], 
 	"description": "Add colour code for grey to script"
 }
@@ -48,7 +48,7 @@
 "add brown colour code": { 
 	"prefix": "brown", 
 	"body": [ 
-	"\\e[33m" 
+	"\\033[33m" 
 	], 
 	"description": "Add colour code for brown to script"
 }
@@ -56,7 +56,7 @@
 "add black colour code": { 
 	"prefix": "black", 
 	"body": [ 
-	"\\e[30m" 
+	"\\033[30m" 
 	], 
 	"description": "Add colour code for black to script"
 }
@@ -64,7 +64,7 @@
 "add white colour code": { 
 	"prefix": "white", 
 	"body": [ 
-	"\\e[00m" 
+	"\\033[00m" 
 	], 
 	"description": "Add colour code for white to script"
 }
@@ -72,7 +72,7 @@
 "add purple colour code": { 
 	"prefix": "purple", 
 	"body": [ 
-	"\\e[35m" 
+	"\\033[35m" 
 	], 
 	"description": "Add colour code for purple to script"
 }
@@ -80,7 +80,7 @@
 "add red colour code": { 
 	"prefix": "red", 
 	"body": [ 
-	"\\e[31m" 
+	"\\033[31m" 
 	], 
 	"description": "Add colour code for red to script"
 }
@@ -88,7 +88,7 @@
 "add green colour code": { 
 	"prefix": "green", 
 	"body": [ 
-	"\\e[32m" 
+	"\\033[32m" 
 	], 
 	"description": "Add colour code for green to script"
 }
@@ -96,7 +96,7 @@
 "add blue colour code": { 
 	"prefix": "blue", 
 	"body": [ 
-	"\\e[34m" 
+	"\\033[34m" 
 	], 
 	"description": "Add colour code for blue to script"
 }
