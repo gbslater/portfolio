@@ -26,7 +26,8 @@ getNumber()
     #Ask the user for a number between $2 and $3
     read -p "$1: " userinput
     
-    # Check to see if the user entered a null string
+    # Check to see if the user entered a null string because if you enter
+    # a null value the scrupt will terminate with an error
     input=$userinput 
     if [ -z $input ]; then
       # The user entered a null string so we need to set it to an out of bounds number
@@ -55,13 +56,13 @@ getNumber()
       input=$userinput 
       if [ -z $input ]; then
         # The user entered a null string so we need to set it to an out of bounds number
-        input=$(( $2 - 1))
+        input=$(( $2 - 1 ))
       fi  
 
     done 
 
     # We know the reply will be the magic number
-    echo Correct!
+    echo "Right!"
  
 }
 
