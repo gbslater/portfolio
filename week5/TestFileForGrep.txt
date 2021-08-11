@@ -1,0 +1,25 @@
+This is a text file for testing grep
+
+meal test for line starting with m
+Meal test for line starting with M 
+
+A line with 3 digits numbers 347 
+A line with 4 digits numbers 3794
+A line with 2 digit number 45 45
+
+echo "Hi There"
+echo "Hi There World"
+echo "This is a test"
+echo -e "Hi There World"
+echo "Hi There World How are you"
+echo -e "Hi There World How are you"
+
+TestPassword123!
+bleeBlah2%
+thisisnotapassword123
+is this a Pass w0rd!
+There is a Passw0rd# here
+
+sed
+closed
+sedition
